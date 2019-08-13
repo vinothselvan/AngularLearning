@@ -1,0 +1,42 @@
+<form id="studentreg"   align="center ">
+    
+    <div>
+        Id:
+        <input type="number" [(ngModel)]="Studentobject.id" [ngModelOptions]="{standalone: true}"
+            name="id">
+    </div><br>
+    <div>
+        First Name:
+        <input type="text" [(ngModel)]="Studentobject.firstname" [ngModelOptions]="{standalone: true}"
+            name="firstname">
+    </div><br>
+
+    <div class="group">
+        Last Name:
+        <input type="text" [(ngModel)]="Studentobject.lastname" [ngModelOptions]="{standalone: true}"
+            name="lastname">
+    </div><br>
+
+    <div class="group"> 
+        Dob:
+        <input type="date" [(ngModel)]="Studentobject.dob" [ngModelOptions]="{standalone: true}" name="Dob">
+    </div><br>
+
+    <div class="group">
+        Age:
+        <input type="text" [(ngModel)]="Studentobject.age" [ngModelOptions]="{standalone: true}" name="age">
+    </div><br>
+
+    <div class="group">
+        Email:
+        <input type="email" [(ngModel)]="Studentobject.email" [ngModelOptions]="{standalone: true}" name="email">
+    </div><br>
+
+    <button (click)="submit(Studentobject)" value="Submit">submit</button>
+
+    <button class="nav-item nav-link-edit" [routerLink]="'/helloo'">view</button >
+
+    <button (click)="update(Studentobject)" value="Submit">update</button>
+
+</form>
+

@@ -1,0 +1,30 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Dob</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let group of studentdetails">
+                <td>{{group.id}}</td>
+                <td> {{group.firstname}}</td>
+                <td> {{group.lastname}}</td>
+                <td>  {{group.dob}}</td>
+                <td> {{group.age}}</td>
+                <td> {{group.email}}</td>
+           
+       
+                    <td> <button (click)="edit(group)">edit</button></td> 
+
+                    <td> <button (click)="erase(group)">Delete</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
